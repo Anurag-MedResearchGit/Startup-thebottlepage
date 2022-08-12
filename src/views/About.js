@@ -16,7 +16,7 @@ const About = () => {
             <h1>About the product and creator</h1>
             <h1></h1>
             <h2>mattrank likes unicorns and is a dipshit</h2>
-            <h2>anurag likes simosas and is a dipshit</h2>
+            <h2>anurag likes unicorns too and is a dipshit</h2>
             <h1></h1>
             <h2>OUR bottle will make you look coooler</h2>
 
