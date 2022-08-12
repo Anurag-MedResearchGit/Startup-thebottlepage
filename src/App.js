@@ -1,24 +1,25 @@
 import logo from './logo.svg';
 import './App.css';
+import {Route, Routes} from "react-router-dom";
+
+import LandingPage from "./views/LandingPage.js";
+import About from "./views/About";
+import FAQ from "./views/FAQ"
+import LinkToPurchase from "./views/LinkToPurchase";
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <Routes>
+        <Route path={"/"} element={<LandingPage/>}/>
+        <Route path= {"/purchaselinks"} element={<LinkToPurchase/>} />
+        <Route path= {"/about"} element={<About/>} />
+        <Route path= {"/faq"} element={<FAQ/>} />
+
+        {/*<Route exact path= {"/forgot"} component={ResetPassword} />*/}
+        {/*<PrivateRoute path= {"/maps"} loggedIn={currentUser} component={GoogleMapSDK}  />*/}
+        {/*<PrivateRoute path= {"/profile"} loggedIn={currentUser} component={FAQ}  />*/}
+      </Routes>
   );
 }
 
